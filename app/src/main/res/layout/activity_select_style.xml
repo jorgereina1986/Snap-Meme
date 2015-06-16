@@ -1,61 +1,66 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
-    tools:context="gmsyrimis.c4q.nyc.cammy.SelectStyleActivity"
+    android:background="@drawable/backgroundfinal"
     android:orientation="vertical"
-    android:background="@drawable/backgroundfinal">
+    android:padding="15dp"
+    tools:context="gmsyrimis.c4q.nyc.cammy.SelectStyleActivity">
+
     <TextView
+        android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="$eLecT $tYl3"
-        android:textSize="50dp"
-        android:gravity="center"
-        android:textColor="#ffffff"
         android:layout_marginTop="20dp"
-        android:id="@+id/textView6" />
+        android:gravity="center"
+        android:text="$eLecT $tYl3"
+        android:textColor="#ffffff"
+        android:textSize="50dp" />
 
     <ImageView
+        android:id="@+id/choose_vanilla"
         android:layout_width="140dp"
         android:layout_height="150dp"
-        android:background="@drawable/vanillafinal"
-        android:id="@+id/choose_vanilla"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentStart="true"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_above="@+id/textView5"
-        android:layout_alignParentStart="true" />
+        android:background="@drawable/vanillafinal" />
+
     <ImageView
+        android:id="@+id/choose_demotivational"
         android:layout_width="140dp"
         android:layout_height="150dp"
-        android:background="@drawable/demotivational"
-        android:id="@+id/choose_demotivational"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
         android:layout_gravity="right"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
+        android:background="@drawable/demotivational" />
 
     <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Demotivational"
-        android:id="@+id/textView5"
+        android:layout_alignStart="@+id/choose_demotivational"
+        android:layout_below="@+id/choose_demotivational"
         android:layout_gravity="right"
         android:editable="false"
-        android:layout_below="@+id/choose_demotivational"
-        android:layout_alignStart="@+id/choose_demotivational" />
+        android:text="Demotivational"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="21dp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Vanilla"
-        android:id="@+id/textView"
-        android:layout_alignTop="@+id/textView5"
         android:layout_alignStart="@+id/choose_vanilla"
-        android:layout_marginStart="42dp" />
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginStart="42dp"
+        android:text="Vanilla"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="21dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

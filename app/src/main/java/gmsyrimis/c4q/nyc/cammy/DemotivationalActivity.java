@@ -102,7 +102,7 @@ public class DemotivationalActivity extends Activity {
                 Intent chooser = Intent.createChooser(intent, "Send Picture");
                 startActivity(chooser);
 
-                
+
             }
         });
 
