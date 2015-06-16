@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -83,6 +84,9 @@ public class DemotivationalActivity extends Activity {
                 Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
                 mediaScanIntent.setData(resultUri);
                 sendBroadcast(mediaScanIntent);
+
+                Toast.makeText(getApplicationContext(),
+                        "SAVED", Toast.LENGTH_SHORT).show();
             }
         });
         
@@ -97,6 +101,8 @@ public class DemotivationalActivity extends Activity {
                 intent.putExtra(Intent.EXTRA_TEXT, "");
                 Intent chooser = Intent.createChooser(intent, "Send Picture");
                 startActivity(chooser);
+
+                
             }
         });
 
