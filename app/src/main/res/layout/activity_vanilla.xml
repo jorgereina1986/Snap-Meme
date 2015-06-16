@@ -1,48 +1,56 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="gmsyrimis.c4q.nyc.cammy.VanillaActivity"
-    android:padding="4dp"
+    android:id="@+id/vanilla_custom_image"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundfinal"
     android:orientation="vertical"
-    android:id="@+id/vanilla_custom_image">
+    android:padding="4dp"
+    tools:context="gmsyrimis.c4q.nyc.cammy.VanillaActivity">
+
 
     <EditText
         android:id="@+id/vanilla_top_text"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="BOUGHT A LEASH"
-        android:textColor="#ffffff"
-        android:textSize="50dp"
         android:layout_weight="1"
-        android:gravity="center|top"/>
+        android:gravity="center|top"
+        android:hint="Write top text here"
+        android:textColor="#ffffff"
+        android:textSize="50dp" />
 
 
     <EditText
         android:id="@+id/vanilla_bottom_text"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="HAS A CAT"
-        android:textColor="#ffffff"
-        android:textSize="50dp"
         android:layout_weight="0.87"
-        android:gravity="center|bottom"/>
+        android:gravity="center|bottom"
+        android:hint="Write bottom text here"
+        android:textColor="#ffffff"
+        android:textSize="50dp" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_gravity="right" />
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Share"
-        android:id="@+id/btShare" />
+        <Button
+            android:id="@+id/button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/btShare"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Share" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
