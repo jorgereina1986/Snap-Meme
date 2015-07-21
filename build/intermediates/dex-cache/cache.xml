@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/c4q-jorgereina/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-android/4.47/c72f9ed54d8a8bab3fbf56da2b358308a67899a4/ormlite-android-4.47.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c72f9ed54d8a8bab3fbf56da2b358308a67899a4">
+        <dex dex="/Users/c4q-jorgereina/Desktop/unit3/homework/Snap-Meme/app/build/intermediates/pre-dexed/debug/ormlite-android-4.47-3d0f3431d9dc0541d55b4abb705ca29c7123d1a6.jar" />
+    </item>
+    <item
+        jar="/Users/c4q-jorgereina/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.47/e11abddd1e9c2053a92133fa83f78f7bedb820a9/ormlite-core-4.47.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e11abddd1e9c2053a92133fa83f78f7bedb820a9">
+        <dex dex="/Users/c4q-jorgereina/Desktop/unit3/homework/Snap-Meme/app/build/intermediates/pre-dexed/debug/ormlite-core-4.47-4304a6f18783feb8d0661c4390d10b481232aed1.jar" />
+    </item>
+
+</items>
